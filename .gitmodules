@@ -1,0 +1,3 @@
+[submodule "ws_ros2/src/px4_msgs"]
+	path = ws_ros2/src/px4_msgs
+	url = https://github.com/PX4/px4_msgs.git
