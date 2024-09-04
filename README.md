@@ -3,6 +3,12 @@
 This repository provides a template to set up a simulation environment for a quadcopter equipped with a camera. It uses PX4, Gazebo harmonic, and ROS2 humble, enabling the development and testing of software for a drone with a companion computer for mission planning and computer vision. 
 
 A Python example script is included to show how to control the drone and access the camera feed, serving as a starting point for further development.
+Here's a paragraph explaining the directory structure for the README:
+
+## Directory Structure
+
+- **`PX4-Autopilot_PATCH/`**: Contains custom worlds, models, and configurations to be copied into the PX4 installation. These files are used to extend the default PX4 setup with additional simulation environments and drone models.
+- **`ws_ros2/`**: The ROS2 workspace where custom ROS2 nodes are developed and built. It includes the `my_offboard_ctrl` package, which provides an example of drone control using ROS2.
 
 ## Install
 
