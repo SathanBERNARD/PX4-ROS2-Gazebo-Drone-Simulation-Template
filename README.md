@@ -1,5 +1,10 @@
 # PX4_Gazebo_ROS2_install_for_ubuntu
 
+This goal is to facilitate the creation of a environnement to simulate a software piloted quadcopter equiped with a camera. The real drone this repo is meant for is equipped with a companion computer for mission planning an computer vision algorithms.
+It uses PX4 SITL, Gazebo and ROS2.
+
+ It was setup for a drone competition Droneload 
+  and gives an initial structure of a simulation environnement 
 
 ## Install
 Work on Ubuntu 22 but not it's derivatives (Mint...)
