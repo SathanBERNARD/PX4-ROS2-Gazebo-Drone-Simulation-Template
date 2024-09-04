@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'offboard_ctrl'
+package_name = 'my_offboard_ctrl'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'offboard_ctrl_example = offboard_ctrl.offboard_ctrl_example:main'
+            'offboard_ctrl_example = my_offboard_ctrl.offboard_ctrl_example:main'
         ],
     },
 )

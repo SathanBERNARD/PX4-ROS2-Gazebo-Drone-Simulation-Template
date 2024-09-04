@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.10'>
+  <model name='test_world'>
+    <pose>0 0 0 0 0 0</pose>
+    <self_collide>false</self_collide>
+    <static>true</static>
+    <link name="map">
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <pose>0 0 0 0 0 0</pose>
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://test_world/meshes/test_terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <pose>0 0 0 0 0 0 </pose>
+        <geometry>
+          <mesh>
+            <uri>model://test_world/meshes/test_terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
