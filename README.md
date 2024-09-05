@@ -42,14 +42,34 @@ This setup works on Ubuntu 22.04 but not on its derivatives (e.g., Linux Mint).
   ```sh
   MicroXRCEAgent udp4 -p 8888
   ```
+  MicroXRCEAgent is the interface that allows uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics.
+  https://docs.px4.io/main/en/middleware/uxrce_dds.html
 
 ### PX4 SITL and Gazebo
 
 - In a new terminal, launch PX4 SITL with Gazebo:
   ```sh
-  cd ~/PX4-Autopilot
-  PX4_GZ_MODEL_POSE="1,1,0.1,0,0,0.9" PX4_GZ_WORLD=test_world make px4_sitl gz_x500_mono_cam
+  PX4_SYS_AUTOSTART=4010 PX4_SIM_MODEL=gz_x500_mono_cam PX4_GZ_MODEL_POSE="1,1,0.1,0,0,0.9" PX4_GZ_WORLD=test_world ~/PX4-Autopilot/build/px4_sitl_default/bin/px4
   ```
+  This command launches the PX4 software in SITL (software in the loop) mode and Gazebo.
+  
+  - PX4_SYS_AUTOSTART=4010 defines the airframe to be used by PX4.
+  The 4010 airframe is the default for x500_mono_cam and is equivalent to the 4001 airframe.
+  
+  - PX4_SIM_MODEL=gz_x500_mono_cam defines the model to be loaded in Gazebo.
+  
+  - PX4_GZ_MODEL_POSE="1,1,0.1,0,0,0.9" defines the initial pose of the vehicle.
+  
+  - PX4_GZ_WORLD=test_world defines the world to be loaded in Gazebo.
+  
+  (Gazebo Simulation doc : https://docs.px4.io/main/en/sim_gazebo_gz/)
+
+  (Airframes Reference : https://docs.px4.io/main/en/airframes/airframe_reference.html)
+
+  (4010 airframe file https://github.com/PX4/PX4-Autopilot/blob/main/ROMFS/px4fmu_common/init.d-posix/airframes/4010_gz_x500_mono_cam) 
+
+
+  
 
 ### ROS2 Node for Companion Computer
 
@@ -65,3 +85,5 @@ This setup works on Ubuntu 22.04 but not on its derivatives (e.g., Linux Mint).
   ```sh
   colcon build --packages-select my_offboard_ctrl
   ```
+
+  (For more info, ROS2 Package doc : https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)
