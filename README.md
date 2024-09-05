@@ -43,7 +43,8 @@ This setup works on Ubuntu 22.04 but not on its derivatives (e.g., Linux Mint).
   MicroXRCEAgent udp4 -p 8888
   ```
   MicroXRCEAgent is the interface that allows uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics.
-  https://docs.px4.io/main/en/middleware/uxrce_dds.html
+  
+  (uXRCE-DDS doc : https://docs.px4.io/main/en/middleware/uxrce_dds.html)
 
 ### PX4 SITL and Gazebo
 
