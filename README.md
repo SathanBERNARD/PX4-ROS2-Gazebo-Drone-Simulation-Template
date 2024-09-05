@@ -49,7 +49,11 @@ This setup works on Ubuntu 22.04 but not on its derivatives (e.g., Linux Mint).
 
 - In a new terminal, launch PX4 SITL with Gazebo:
   ```sh
-  PX4_SYS_AUTOSTART=4010 PX4_SIM_MODEL=gz_x500_mono_cam PX4_GZ_MODEL_POSE="1,1,0.1,0,0,0.9" PX4_GZ_WORLD=test_world ~/PX4-Autopilot/build/px4_sitl_default/bin/px4
+  PX4_SYS_AUTOSTART=4010 \
+  PX4_SIM_MODEL=gz_x500_mono_cam \
+  PX4_GZ_MODEL_POSE="1,1,0.1,0,0,0.9" \
+  PX4_GZ_WORLD=test_world \
+  ~/PX4-Autopilot/build/px4_sitl_default/bin/px4
   ```
   This command launches the PX4 software in SITL (software in the loop) mode and Gazebo.
   
