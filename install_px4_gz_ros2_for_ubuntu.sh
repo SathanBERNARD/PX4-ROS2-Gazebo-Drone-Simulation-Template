@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 cd 
 
 touch .profile
@@ -23,7 +24,7 @@ sudo apt-get install gz-harmonic -y
 
 cd
 sudo apt-get install git python3-pip -y
-git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+git clone --depth 1 --branch v1.15.2 https://github.com/PX4/PX4-Autopilot.git --recursive
 cd PX4-Autopilot/
 #git submodule foreach git pull origin main
 bash ./Tools/setup/ubuntu.sh --no-sim-tools
