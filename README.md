@@ -68,6 +68,8 @@ This setup is tested on Ubuntu 22.04 and is not compatible with its derivatives 
   - [Airframes Reference](https://docs.px4.io/main/en/airframes/airframe_reference.html)
   - [4010 Airframe File](https://github.com/PX4/PX4-Autopilot/blob/main/ROMFS/px4fmu_common/init.d-posix/airframes/4010_gz_x500_mono_cam)
 
+  In case of error message `ERROR [gz_bridge] Service call timed out.` try again.
+
 ### 4. Build and Run the ROS2 Node (Companion Computer Software)
 
 - In a new terminal, build and run the ROS2 node:
