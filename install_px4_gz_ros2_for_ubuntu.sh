@@ -24,10 +24,9 @@ sudo apt-get install gz-harmonic -y
 cd
 sudo apt-get install git python3-pip -y
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
-git submodule foreach git pull origin main
-
-bash ./PX4-Autopilot/Tools/setup/ubuntu.sh --no-sim-tools
 cd PX4-Autopilot/
+#git submodule foreach git pull origin main
+bash ./Tools/setup/ubuntu.sh --no-sim-tools
 make px4_sitl
 
 cd
