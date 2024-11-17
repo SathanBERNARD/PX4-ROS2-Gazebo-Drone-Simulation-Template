@@ -139,7 +139,7 @@ class OffboardControl(Node):
 
 # Camera module
 def launch_cam_receiver():
-  cam = GzCam("/camera", (1280,960))
+  cam = GzCam("/camera", (640,480))
   while True:
     img = cam.get_next_image()
     cv2.imshow('pic-display', img)
