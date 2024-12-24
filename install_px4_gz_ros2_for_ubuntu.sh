@@ -25,8 +25,13 @@ sudo apt-get install gz-harmonic -y
 
 cd
 sudo apt-get install git python3-pip -y
-git clone --depth 1 --branch v1.15.2 https://github.com/PX4/PX4-Autopilot.git --recursive
+git clone --depth 1 --branch v1.15.3 https://github.com/PX4/PX4-Autopilot.git --recursive
 cd PX4-Autopilot/
+# add a fix for ubuntu 24
+set +e
+git fetch origin main
+set -e
+git show 058fe54:Tools/setup/ubuntu.sh > Tools/setup/ubuntu.sh
 #git submodule foreach git pull origin main
 bash ./Tools/setup/ubuntu.sh --no-sim-tools
 make px4_sitl
