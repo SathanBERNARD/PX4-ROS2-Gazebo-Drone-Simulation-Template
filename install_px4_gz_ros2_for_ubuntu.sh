@@ -52,9 +52,9 @@ set +e
 sudo apt-get update -y
 set -e
 sudo apt upgrade -y
-sudo apt install ros-humble-desktop -y
+sudo apt install ros-jazzy-desktop -y
 sudo apt install ros-dev-tools -y
-source /opt/ros/humble/setup.bash && echo "source /opt/ros/humble/setup.bash" >> .bashrc
+source /opt/ros/jazzy/setup.bash && echo "source /opt/ros/jazzy/setup.bash" >> .bashrc
 
 pip install --user -U empy==3.3.4 pyros-genmsg==0.5.8 setuptools==70.0.0 opencv-python
 
