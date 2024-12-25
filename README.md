@@ -19,14 +19,14 @@ This setup is tested on Ubuntu 22.04 and is not compatible with its derivatives 
 1. Clone the repository and run the installation script:
    ```bash
    cd ~
-   git clone --recursive https://github.com/SathanBERNARD/PX4_Gazebo_ROS2_install_for_ubuntu.git
-   cd ~/PX4_Gazebo_ROS2_install_for_ubuntu
+   git clone --recursive https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git
+   cd ~/PX4-ROS2-Gazebo-Drone-Simulation-Template
    ./install_px4_gz_ros2_for_ubuntu.sh
    ```
 
 2. Copy the custom worlds and models into the PX4 installation:
    ```bash
-   cd ~/PX4_Gazebo_ROS2_install_for_ubuntu
+   cd ~/PX4-ROS2-Gazebo-Drone-Simulation-Template
    cp -r ./PX4-Autopilot_PATCH/* ~/PX4-Autopilot/
    ```
 
@@ -74,7 +74,7 @@ This setup is tested on Ubuntu 22.04 and is not compatible with its derivatives 
 
 - In a new terminal, build and run the ROS2 node:
   ```bash
-  cd ~/PX4_Gazebo_ROS2_install_for_ubuntu/ws_ros2
+  cd ~/PX4-ROS2-Gazebo-Drone-Simulation-Template/ws_ros2
   colcon build
   source install/local_setup.bash
   ros2 run my_offboard_ctrl offboard_ctrl_example
