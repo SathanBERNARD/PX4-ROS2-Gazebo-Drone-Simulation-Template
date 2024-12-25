@@ -61,8 +61,6 @@ sudo apt install ros-jazzy-desktop -y
 sudo apt install ros-dev-tools -y
 source /opt/ros/jazzy/setup.bash && echo "source /opt/ros/jazzy/setup.bash" >> .bashrc
 
-pip install --user opencv-python
-
 
 cd
 git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
@@ -76,7 +74,7 @@ sudo ldconfig /usr/local/lib/
 cd
 
 
-sudo apt install python3-colcon-clean -y
+sudo apt install python3-colcon-clean python3-opencv -y
 
 
 sudo apt autoremove -y
