@@ -19,7 +19,7 @@ This setup is tested on Ubuntu 24.04 and might not be compatible with its deriva
 1. Clone the repository and run the installation script:
    ```bash
    cd ~
-   git clone --recursive https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git
+   git clone --recursive -b ubuntu24 https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git
    cd ~/PX4-ROS2-Gazebo-Drone-Simulation-Template
    ./install_px4_gz_ros2_for_ubuntu.sh
    ```
