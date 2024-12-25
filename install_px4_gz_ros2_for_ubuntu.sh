@@ -61,7 +61,7 @@ sudo apt install ros-jazzy-desktop -y
 sudo apt install ros-dev-tools -y
 source /opt/ros/jazzy/setup.bash && echo "source /opt/ros/jazzy/setup.bash" >> .bashrc
 
-pip install --user -U empy==3.3.4 pyros-genmsg==0.5.8 setuptools==70.0.0 opencv-python
+pip install --user opencv-python
 
 
 cd
