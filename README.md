@@ -1,6 +1,6 @@
 # PX4-ROS2-Gazebo Drone Simulation Template
 
-This repository provides a template to set up a simulation environment for a quadcopter equipped with a camera. It integrates PX4, Gazebo Harmonic, and ROS2 Humble, enabling the development and testing of software for a drone with a companion computer. This environment is ideal for mission planning and computer vision applications. A Python example script is included to demonstrate how to control the drone and access the camera feed, serving as a starting point for further development.
+This repository provides a template to set up a simulation environment for a quadcopter equipped with a camera. It integrates PX4, Gazebo Harmonic, and ROS2 Jazzy, enabling the development and testing of software for a drone with a companion computer. This environment is ideal for mission planning and computer vision applications. A Python example script is included to demonstrate how to control the drone and access the camera feed, serving as a starting point for further development.
 
 ![Overview gif](media/1.gif) 
 
@@ -14,7 +14,7 @@ This repository provides a template to set up a simulation environment for a qua
 
 ## Installation
 
-This setup is tested on Ubuntu 22.04 and is not compatible with its derivatives (e.g., Linux Mint).
+This setup is tested on Ubuntu 24.04 and might not be compatible with its derivatives (e.g., Linux Mint).
 
 1. Clone the repository and run the installation script:
    ```bash
@@ -85,4 +85,4 @@ This setup is tested on Ubuntu 22.04 and is not compatible with its derivatives 
   colcon build --packages-select my_offboard_ctrl
   ```
 
-  For additional details, refer to the [ROS2 Package documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
+  For additional details, refer to the [ROS2 Package documentation](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html).
